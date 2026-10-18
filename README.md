@@ -1,43 +1,79 @@
-# Astro Starter Kit: Minimal
 
-```sh
-npm create astro@latest -- --template minimal
+# PlayMind
+
+**Play. Think. Discover.**
+
+PlayMind is a website designed for quizzes across various categories. It aims to make learning, testing knowledge, and discovering new things entertaining and accessible.
+
+## Categories
+
+- **Football** — Test your football knowledge.
+- **Anime** — Explore anime-related quizzes. Coming soon.
+- **Personality** — Discover more about yourself. Coming soon.
+
+## Built With
+
+- [Astro](https://astro.build/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://react.dev/)
+
+## Current Status
+
+PlayMind is currently under development.
+
+- [x] Homepage
+- [x] Interactive football quiz
+- [ ] Anime quizzes
+- [ ] Personality tests
+- [ ] Additional quizzes and features
+
+## Getting Started
+
+### Requirements
+
+- [Node.js](https://nodejs.org/)
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/massanovsalimkhan-khanveil/playmind.git
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Open the project folder:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+cd playmind
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Install dependencies:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```bash
+npm install
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+Start the development server:
 
-## 🧞 Commands
+```bash
+npm run dev
+```
 
-All commands are run from the root of the project, from a terminal:
+Open the local URL displayed in your terminal.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Build
 
-## 👀 Want to learn more?
+To create a production build, run:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+npm run build
+```
+
+## Project Goal
+
+PlayMind aims to become a simple, engaging quiz platform covering multiple interests, with new categories and quizzes added over time.
+
+---
+
+Created by [khanveil](https://github.com/massanovsalimkhan-khanveil).
