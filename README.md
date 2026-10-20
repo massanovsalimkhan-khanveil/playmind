@@ -1,79 +1,75 @@
-
 # PlayMind
 
-**Play. Think. Discover.**
+<div align="center">
 
-PlayMind is a website designed for quizzes across various categories. It aims to make learning, testing knowledge, and discovering new things entertaining and accessible.
+### Play. Think. Discover.
+
+A quiz platform for football, anime, and personality tests.
+
+[**Open PlayMind**](https://playmind-ai2.pages.dev/) · [Report an issue](https://github.com/massanovsalimkhan-khanveil/playmind/issues)
+
+</div>
+
+---
+
+## Overview
+
+PlayMind is a web project built to make testing knowledge and discovering interests simple and engaging. The platform is being developed one feature at a time.
 
 ## Categories
 
-- **Football** — Test your football knowledge.
-- **Anime** — Explore anime-related quizzes. Coming soon.
-- **Personality** — Discover more about yourself. Coming soon.
+| Category | Status | Description |
+| --- | --- | --- |
+| Football | Available | Test your football knowledge with an interactive quiz. |
+| Anime | Planned | Anime-themed quizzes. |
+| Personality | Planned | Personality tests and self-discovery. |
 
-## Built With
+## Tech Stack
 
-- [Astro](https://astro.build/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [React](https://react.dev/)
+- **Astro** — site framework
+- **TypeScript** — typed JavaScript
+- **React** — interactive UI components
 
-## Current Status
-
-PlayMind is currently under development.
+## Project Status
 
 - [x] Homepage
 - [x] Interactive football quiz
 - [ ] Anime quizzes
 - [ ] Personality tests
-- [ ] Additional quizzes and features
+- [ ] More quizzes and features
 
-## Getting Started
+## Run Locally
 
 ### Requirements
 
 - [Node.js](https://nodejs.org/)
 - npm
 
-### Installation
-
-Clone the repository:
+### Setup
 
 ```bash
 git clone https://github.com/massanovsalimkhan-khanveil/playmind.git
-```
-
-Open the project folder:
-
-```bash
 cd playmind
-```
-
-Install dependencies:
-
-```bash
 npm install
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
 
-Open the local URL displayed in your terminal.
+Open the local URL shown in your terminal.
 
-## Build
-
-To create a production build, run:
+### Production Build
 
 ```bash
 npm run build
 ```
 
-## Project Goal
+## Goals
 
-PlayMind aims to become a simple, engaging quiz platform covering multiple interests, with new categories and quizzes added over time.
+Keep the experience clear and accessible while expanding the collection of quizzes and categories.
 
 ---
 
-Created by [khanveil](https://github.com/massanovsalimkhan-khanveil).
+<div align="center">
+
+Built by [khanveil](https://github.com/massanovsalimkhan-khanveil)
+
+</div>
