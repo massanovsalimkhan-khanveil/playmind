@@ -1,0 +1,215 @@
+
+---
+import QuizGame from "../../components/QuizGame";
+import { worldCupQuiz } from "../../data/worldCup";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Challenge yourself with difficult FIFA World Cup trivia, legendary players, historic finals and remarkable records."
+    />
+    <meta name="theme-color" content="#101014" />
+    <title>World Cup Legends Quiz — PlayMind</title>
+  </head>
+
+  <body>
+    <header>
+      <a class="logo" href="/" aria-label="PlayMind home">
+        <span class="logo-icon">P</span>
+        <span>Play<span class="logo-light">Mind</span></span>
+      </a>
+
+      <a class="back-link" href="/">Back to Home</a>
+    </header>
+
+    <main>
+      <div class="page-heading">
+        <p class="eyebrow">PLAYMIND / FOOTBALL</p>
+        <h1>World Cup <span>Legends.</span></h1>
+        <p>Ten questions. Four options. Only true football fans reach the top.</p>
+      </div>
+
+      <QuizGame client:load category={worldCupQuiz} />
+
+      <p class="page-note">History remembers the great ones.</p>
+    </main>
+
+    <footer>© 2026 PlayMind · Play. Think. Discover.</footer>
+  </body>
+</html>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(html) {
+    min-height: 100%;
+    background: #101014;
+  }
+
+  :global(body) {
+    margin: 0;
+    color: #f5f5f7;
+    background: #101014;
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :global(a) {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  header {
+    display: flex;
+    min-height: 76px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 7%;
+    border-bottom: 1px solid #292930;
+  }
+
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+  }
+
+  .logo-icon {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    place-items: center;
+    border-radius: 9px;
+    background: #ff8a35;
+    color: #17130f;
+    font-weight: 900;
+  }
+
+  .logo-light {
+    color: #ff8a35;
+  }
+
+  .back-link {
+    display: inline-flex;
+    min-height: 42px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 17px;
+    border: 1px solid #393941;
+    border-radius: 9px;
+    background: #1b1b22;
+    color: #f0f0f3;
+    font-size: 14px;
+    font-weight: 650;
+    white-space: nowrap;
+    transition:
+      background 150ms ease,
+      border-color 150ms ease,
+      color 150ms ease;
+  }
+
+  .back-link:hover {
+    border-color: #ff8a35;
+    background: #242127;
+    color: #ffab70;
+  }
+
+  .back-link:focus-visible {
+    outline: 2px solid #ff8a35;
+    outline-offset: 3px;
+  }
+
+  main {
+    width: min(720px, 90%);
+    margin: 0 auto;
+    padding: 55px 0 35px;
+  }
+
+  .page-heading {
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .eyebrow {
+    color: #ff8a35;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+  }
+
+  h1 {
+    margin: 15px 0 10px;
+    font-size: clamp(35px, 7vw, 52px);
+    font-weight: 850;
+    letter-spacing: -2px;
+  }
+
+  h1 span {
+    color: #ff8a35;
+  }
+
+  .page-heading > p:last-child {
+    color: #b6b6c0;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .page-note {
+    margin-top: 24px;
+    color: #888892;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 22px 15px;
+    border-top: 1px solid #292930;
+    color: #888892;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    header {
+      min-height: 68px;
+      padding: 10px 5%;
+    }
+
+    .logo {
+      gap: 8px;
+      font-size: 19px;
+    }
+
+    .back-link {
+      min-height: 40px;
+      padding: 0 12px;
+      font-size: 13px;
+    }
+
+    main {
+      padding-top: 38px;
+    }
+
+    h1 {
+      letter-spacing: -1.5px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .back-link {
+      transition: none;
+    }
+  }
+</style>
